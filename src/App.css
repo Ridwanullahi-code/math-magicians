@@ -38,10 +38,26 @@ button {
   background-color: rgb(224, 224, 224);
 }
 
+button:hover {
+  background-color: rgba(224, 224, 224, 0.726);
+}
+
+button:active {
+  background-color: rgba(128, 128, 128, 0.534);
+}
+
 .zero {
   grid-column: 1/span 2;
 }
 
 .operator {
   background-color: rgb(245, 145, 62);
+}
+
+.operator:hover {
+  background-color: rgba(245, 144, 62, 0.767);
+}
+
+.operator:active {
+  background-color: rgba(63, 30, 2, 0.767);
 }
