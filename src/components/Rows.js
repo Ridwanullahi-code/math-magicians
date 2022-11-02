@@ -1,30 +1,28 @@
-/* eslint-disable */
-import React from "react";
-import Button from "./Button.js";
+import React from 'react';
 
-class Row extends React.Component {
+class Row extends React.PureComponent {
   render() {
     return (
       <div className="grid-container">
-        <Button text="AC" />
-        <Button text="+/-" />
-        <Button text="%" />
-        <Button text="&#247;" class="operator" />
-        <Button text="7" />
-        <Button text="8" />
-        <Button text="9" />
-        <Button text="x" class="operator" />
-        <Button text="4" />
-        <Button text="5" />
-        <Button text="6" />
-        <Button text="-" class="operator" />
-        <Button text="1" />
-        <Button text="2" />
-        <Button text="3" />
-        <Button text="+" class="operator" />
-        <Button text="0" class="zero" />
-        <Button text="." />
-        <Button text="=" class="operator" />
+        <button type="button">AC</button>
+        <button type="button">+/-</button>
+        <button type="button">%</button>
+        <button type="button" className="operator">&#247;</button>
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button" className="operator">x</button>
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button" className="operator">-</button>
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button" className="operator">+</button>
+        <button type="button" className="zero">0</button>
+        <button type="button">.</button>
+        <button type="button" className="operator">=</button>
       </div>
     );
   }

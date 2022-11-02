@@ -1,14 +1,13 @@
-/* eslint-disable */
-import React from "react";
-import Row from "./Rows.js"
+import React from 'react';
+import Row from './Rows';
 
-class Calculator extends React.Component {
+class Calculator extends React.PureComponent {
   render() {
     return (
-      <div className = "calculator-grid">
+      <div className="calculator-grid">
         <Row />
       </div>
-    );  
+    );
   }
 }
 export default Calculator;

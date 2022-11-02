@@ -1,15 +1,14 @@
-/* eslint-disable */
 import React from 'react';
-import Calculator from './components/Calculator.js';
+import Calculator from './components/Calculator';
 import './App.css';
 
-class App extends React.Component {
+class App extends React.PureComponent {
   render() {
     return (
-        <div className="App">
+      <div className="App">
         <div className="result-container">0</div>
-          <Calculator />
-        </div>
+        <Calculator />
+      </div>
     );
   }
 }
