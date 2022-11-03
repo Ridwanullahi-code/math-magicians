@@ -1,6 +1,3 @@
-## **Project Demo**
-
-[Live Demo](https://ridwanullahi-code.github.io/Leaderboard/)
 ## **Description**
 
 **Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.Built this application with react
