@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import Button from './Buttons';
 
 const Calculator = () => {
   const data = { total: 0, next: null, operation: null };
@@ -19,63 +20,25 @@ const Calculator = () => {
         {next}
       </div>
       <div className="grid-container">
-        <button type="button" onClick={handleClick}>
-          AC
-        </button>
-        <button type="button" onClick={handleClick}>
-          +/-
-        </button>
-        <button type="button" onClick={handleClick}>
-          %
-        </button>
-        <button type="button" onClick={handleClick} className="operator">
-          &#247;
-        </button>
-        <button type="button" onClick={handleClick}>
-          7
-        </button>
-        <button type="button" onClick={handleClick}>
-          8
-        </button>
-        <button type="button" onClick={handleClick}>
-          9
-        </button>
-        <button type="button" onClick={handleClick} className="operator">
-          x
-        </button>
-        <button type="button" onClick={handleClick}>
-          4
-        </button>
-        <button type="button" onClick={handleClick}>
-          5
-        </button>
-        <button type="button" onClick={handleClick}>
-          6
-        </button>
-        <button type="button" onClick={handleClick} className="operator">
-          -
-        </button>
-        <button type="button" onClick={handleClick}>
-          1
-        </button>
-        <button type="button" onClick={handleClick}>
-          2
-        </button>
-        <button type="button" onClick={handleClick}>
-          3
-        </button>
-        <button type="button" onClick={handleClick} className="operator">
-          +
-        </button>
-        <button type="button" onClick={handleClick} className="zero">
-          0
-        </button>
-        <button type="button" onClick={handleClick}>
-          .
-        </button>
-        <button type="button" onClick={handleClick} className="operator">
-          =
-        </button>
+        <Button click={handleClick} text="AC" />
+        <Button click={handleClick} text="+/-" />
+        <Button click={handleClick} text="%" />
+        <Button click={handleClick} class="operator" text="&#247;" />
+        <Button click={handleClick} text="7" />
+        <Button click={handleClick} text="8" />
+        <Button click={handleClick} text="9" />
+        <Button click={handleClick} class="operator" text="x" />
+        <Button click={handleClick} text="4" />
+        <Button click={handleClick} text="5" />
+        <Button click={handleClick} text="6" />
+        <Button click={handleClick} class="operator" text="-" />
+        <Button click={handleClick} text="1" />
+        <Button click={handleClick} text="2" />
+        <Button click={handleClick} text="3" />
+        <Button click={handleClick} class="operator" text="+" />
+        <Button click={handleClick} class="zero" text="0" />
+        <Button click={handleClick} text="." />
+        <Button click={handleClick} class="operator" text="=" />
       </div>
     </div>
   );
