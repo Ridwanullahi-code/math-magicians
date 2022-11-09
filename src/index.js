@@ -1,18 +1,17 @@
 /* eslint-disable */
 import React from 'react'
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App.js';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 
 // import css files here
 import "./css/App.css";
 import './css/calculator.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+    </Router>
+  </React.StrictMode>,
+  document.getElementById('root'));

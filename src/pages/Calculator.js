@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import Button from './Buttons';
-import Navbar from './Navbar';
+import Button from '../components/Buttons';
 
 const Calculator = () => {
   const data = { total: 0, next: null, operation: null };
@@ -15,7 +14,6 @@ const Calculator = () => {
   const { total, next, operation } = state;
   return (
     <>
-      <Navbar />
       <div className="container">
         <h2>Let us do some math here!</h2>
         <div className="calculator">
