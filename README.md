@@ -1,5 +1,7 @@
-## **Description**
+## **Project Demo**
+[Live Demo](https://react-math-magicians-app.netlify.app/)
 
+## **Description**
 **Math magicians** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, read a random math-related quote.Built this application with react
 
 ## **Project Goals:**
@@ -15,6 +17,7 @@
 - Basic Knowledge of HTML & CSS
 - Basic Knowledge of [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) & [ES6](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/lesson_es6-what_is_it_about.md) syntax
 - Basic Knowledge of [React Setup](https://reactjs.org/docs/getting-started.html) setup
+- [Jest](https://jestjs.io/docs/getting-started) and [React Testing Library ](https://testing-library.com/docs/react-testing-library/example-intro)
 
 ## **Build With:**
 
@@ -40,13 +43,21 @@ git clone git@github.com:Ridwanullahi-code/math-magicians.git
 ```
 npm install
 ```
+```
+npm install --save-dev @testing-library/dom
+```
 ## **Run On Server**
 To run the project on server, run below command
 
 ```
 npm start
 ```
+## **Run Test**
+To test run the project
 
+```
+npm run test
+```
 ## **Show your support**
 
 Give a ⭐️ if you like this project!
